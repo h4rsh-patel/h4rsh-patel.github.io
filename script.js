@@ -20,7 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const projects = [
     {
         name: "Central Illinois Construct",
-        image: "assets/images/1.webp",
+        image: "assets/images/central-illinois-construct.webp",
         url: "https://cicontractor.com/"
     },
     {
