@@ -19,6 +19,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 const projects = [
     {
+        name: "Aver Media",
+        image: "assets/images/aver.webp",
+        url: "https://aver.media/"
+    },
+    {
         name: "Central Illinois Construct",
         image: "assets/images/central-illinois-construct.webp",
         url: "https://cicontractor.com/"
