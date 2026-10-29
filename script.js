@@ -249,9 +249,7 @@ let visibleProjects = 0;
 
 // Create project card
 function createProject(project) {
-
     const article = document.createElement("article");
-
     article.className = "project";
 
     article.innerHTML = `
@@ -260,17 +258,22 @@ function createProject(project) {
            rel="noopener noreferrer"
            class="project-image">
 
-            <img src="${project.image}"
+            <img src="${project.image || 'assets/images/project-placeholder.webp'}"
                  alt="${project.name} website">
 
             <div class="project-overlay">
                 <span>VIEW SITE ↗</span>
             </div>
-
         </a>
 
         <h3>${project.name}</h3>
     `;
+
+    const image = article.querySelector("img");
+
+    image.addEventListener("error", function () {
+        this.src = "assets/images/project-placeholder.webp";
+    });
 
     return article;
 }
