@@ -20,222 +20,222 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const projects = [
     {
     name: "Aver Media",
-    image: "assets/images/aver.webp",
+    image: "assets/images/aver.png",
     url: "https://aver.media/"
 },
 {
     name: "Bennu Parts",
-    image: "assets/images/bennuparts.webp",
+    image: "assets/images/bennuparts.png",
     url: "https://bennuparts.com/"
 },
 {
     name: "Beyond Build Power",
-    image: "assets/images/beyondbuildpower.webp",
+    image: "assets/images/beyondbuildpower.png",
     url: "https://beyondbuildpower.com/"
 },
 {
     name: "Beckwith Commercial Roofing",
-    image: "assets/images/beckwithcommercialroofing.webp",
+    image: "assets/images/beckwithcommercialroofing.png",
     url: "https://beckwithcommercialroofing.com/"
 },
 {
     name: "Borsberry Law",
-    image: "assets/images/borsberrylaw.webp",
+    image: "assets/images/borsberrylaw.png",
     url: "https://borsberrylaw.com/"
 },
 {
     name: "Berchtold Asphalt",
-    image: "assets/images/berchtoldasphalt.webp",
+    image: "assets/images/berchtoldasphalt.png",
     url: "https://berchtoldasphalt.com/"
 },
 {
     name: "Brothers Gutters 815",
-    image: "assets/images/brothersgutters815.webp",
+    image: "assets/images/brothersgutters815.png",
     url: "https://brothersgutters815.com/"
 },
 {
     name: "Brothers Gutters 309",
-    image: "assets/images/brothersgutters309.webp",
+    image: "assets/images/brothersgutters309.png",
     url: "https://brothersgutters309.com/"
 },
 {
     name: "Craft Xpertz",
-    image: "assets/images/craftxpertz.webp",
+    image: "assets/images/craftxpertz.png",
     url: "https://craftxpertz.com/"
 },
 {
     name: "Compassionate Coexist",
-    image: "assets/images/compassionatecoexist.webp",
+    image: "assets/images/compassionatecoexist.png",
     url: "https://compassionatecoexist.com/"
 },
 {
     name: "Central Illinois Construct",
-    image: "assets/images/cicontractor.webp",
+    image: "assets/images/cicontractor.png",
     url: "https://cicontractor.com/"
 },
 {
     name: "CLR Illinois",
-    image: "assets/images/clrillinois.webp",
+    image: "assets/images/clrillinois.png",
     url: "https://clrillinois.com/"
 },
 {
     name: "Comfort Specialists",
-    image: "assets/images/comfort-specialists.webp",
+    image: "assets/images/comfort-specialists.png",
     url: "https://comfort-specialists.com/"
 },
 {
     name: "DC Tree Landscape",
-    image: "assets/images/dctreelandscape.webp",
+    image: "assets/images/dctreelandscape.png",
     url: "https://dctreelandscape.com/"
 },
 {
     name: "Defender Expeditions Club",
-    image: "assets/images/defenderexpeditionsclub.webp",
+    image: "assets/images/defenderexpeditionsclub.png",
     url: "https://defenderexpeditionsclub.com/"
 },
 {
     name: "Denny Zimmerman Roofing",
-    image: "assets/images/dennyzimmermanroofing.webp",
+    image: "assets/images/dennyzimmermanroofing.png",
     url: "https://dennyzimmermanroofing.com/"
 },
 {
     name: "DM-IG",
-    image: "assets/images/dm-ig.webp",
+    image: "assets/images/dm-ig.png",
     url: "https://dm-ig.com/"
 },
 {
     name: "Everything Water Plumbing",
-    image: "assets/images/everythingwaterplumbing.webp",
+    image: "assets/images/everythingwaterplumbing.png",
     url: "https://everythingwaterplumbing.com/"
 },
 {
     name: "Farmington Road Storage",
-    image: "assets/images/farmingtonroadstorage.webp",
+    image: "assets/images/farmingtonroadstorage.png",
     url: "https://farmingtonroadstorage.com/"
 },
 {
     name: "Fulton County Health",
-    image: "assets/images/fultoncountyhealth.webp",
+    image: "assets/images/fultoncountyhealth.png",
     url: "https://fultoncountyhealth.com/"
 },
 {
     name: "Homlar Law",
-    image: "assets/images/homlarlaw.webp",
+    image: "assets/images/homlarlaw.png",
     url: "https://homlarlaw.com/"
 },
 {
     name: "Jadia Jewels",
-    image: "assets/images/jadiajewels.webp",
+    image: "assets/images/jadiajewels.png",
     url: "https://jadiajewels.com/"
 },
 {
     name: "Jambughoda",
-    image: "assets/images/jambughoda.webp",
+    image: "assets/images/jambughoda.png",
     url: "https://jambughoda.com/"
 },
 {
     name: "Khimani Cotton",
-    image: "assets/images/khimanicotton.webp",
+    image: "assets/images/khimanicotton.png",
     url: "https://khimanicotton.com/"
 },
 {
     name: "McCabs Ride",
-    image: "assets/images/mccabsride.webp",
+    image: "assets/images/mccabsride.png",
     url: "https://mccabsride.com/"
 },
 {
     name: "Mike's Tracklesstrain",
-    image: "assets/images/mikestracklesstrain.webp",
+    image: "assets/images/mikestracklesstrain.png",
     url: "https://mikestracklesstrain.com/"
 },
 {
     name: "Morgan Millwright",
-    image: "assets/images/morganmillwright.webp",
+    image: "assets/images/morganmillwright.png",
     url: "https://morganmillwright.com/"
 },
 {
     name: "Nildos",
-    image: "assets/images/nildos.webp",
+    image: "assets/images/nildos.png",
     url: "https://nildos.com/"
 },
 {
     name: "Prairie State Siding",
-    image: "assets/images/prairiestatesiding.webp",
+    image: "assets/images/prairiestatesiding.png",
     url: "https://prairiestatesiding.com/"
 },
 {
     name: "Peoria Heights Properties",
-    image: "assets/images/peoriaheightsproperties.webp",
+    image: "assets/images/peoriaheightsproperties.png",
     url: "https://peoriaheightsproperties.com/"
 },
 {
     name: "Peoria Gutter Masters",
-    image: "assets/images/peoriaguttermasters.webp",
+    image: "assets/images/peoriaguttermasters.png",
     url: "https://peoriaguttermasters.com/"
 },
 {
     name: "R.D. Davis Heating",
-    image: "assets/images/rddavisheating.webp",
+    image: "assets/images/rddavisheating.png",
     url: "https://rddavisheating.com/"
 },
 {
     name: "RDC Drilling",
-    image: "assets/images/rdcdrilling.webp",
+    image: "assets/images/rdcdrilling.png",
     url: "https://rdcdrilling.com/"
 },
 {
     name: "Shawgo Memorial Home",
-    image: "assets/images/shawgomemorialhome.webp",
+    image: "assets/images/shawgomemorialhome.png",
     url: "https://shawgomemorialhome.com/"
 },
 {
     name: "Smile Center Peoria",
-    image: "assets/images/smilecenterpeoria.webp",
+    image: "assets/images/smilecenterpeoria.png",
     url: "https://smilecenterpeoria.com/"
 },
 {
     name: "St. Peter Benson",
-    image: "assets/images/stpeterbenson.webp",
+    image: "assets/images/stpeterbenson.png",
     url: "https://stpeterbenson.com/"
 },
 {
     name: "St. Paul Peoria",
-    image: "assets/images/stpaulpeoria.webp",
+    image: "assets/images/stpaulpeoria.png",
     url: "https://stpaulpeoria.org/"
 },
 {
     name: "Sunset Metal Roofing",
-    image: "assets/images/sunsetmetalroofing.webp",
+    image: "assets/images/sunsetmetalroofing.png",
     url: "https://www.sunsetmetalroofing.com/"
 },
 {
     name: "Suttatti",
-    image: "assets/images/suttatti.webp",
+    image: "assets/images/suttatti.png",
     url: "https://suttatti.com/"
 },
 {
     name: "St. Anthony Bartonville",
-    image: "assets/images/stanthonybartonville.webp",
+    image: "assets/images/stanthonybartonville.png",
     url: "https://stanthonybartonville.com/"
 },
 {
     name: "Tazewell County",
-    image: "assets/images/tazewell-il.webp",
+    image: "assets/images/tazewell-il.png",
     url: "https://tazewell-il.gov/"
 },
 {
     name: "The Solar Panther",
-    image: "assets/images/thesolarpanther.webp",
+    image: "assets/images/thesolarpanther.png",
     url: "https://thesolarpanther.com/"
 },
 {
     name: "We Care of Morton",
-    image: "assets/images/wecareofmorton.webp",
+    image: "assets/images/wecareofmorton.png",
     url: "https://wecareofmorton.com/"
 },
 {
     name: "Yoder Oil Inc.",
-    image: "assets/images/yoderoilinc.webp",
+    image: "assets/images/yoderoilinc.png",
     url: "https://yoderoilinc.com/"
 }
     
@@ -321,4 +321,3 @@ function updateLoadMoreButton() {
 
 // Initial 9 projects
 loadProjects();
-    
