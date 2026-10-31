@@ -18,7 +18,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 
 const projects = [
-    {
+ {
+    name: "Jambughoda",
+    image: "assets/images/jambughoda.webp",
+    url: "https://jambughoda.com/"
+},
+{
     name: "Aver Media",
     image: "assets/images/aver.webp",
     url: "https://aver.media/"
@@ -103,11 +108,7 @@ const projects = [
     image: "assets/images/jadiajewels.webp",
     url: "https://jadiajewels.com/"
 },
-{
-    name: "Jambughoda",
-    image: "assets/images/jambughoda.webp",
-    url: "https://jambughoda.com/"
-},
+
 {
     name: "Khimani Cotton",
     image: "assets/images/khimanicotton.webp",
