@@ -215,42 +215,42 @@ const projects = [
 }  
 ];
 
-const projectsGrid = document.getElementById("projects-grid");
+// const projectsGrid = document.getElementById("projects-grid");
 
-const projectsPerLoad = 9;
-let visibleProjects = 0;
+// const projectsPerLoad = 9;
+// let visibleProjects = 0;
 
 
-// Create project card
-function createProject(project) {
-    const article = document.createElement("article");
-    article.className = "project";
+// // Create project card
+// function createProject(project) {
+//     const article = document.createElement("article");
+//     article.className = "project";
 
-    article.innerHTML = `
-        <a href="${project.url}"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-image">
+//     article.innerHTML = `
+//         <a href="${project.url}"
+//            target="_blank"
+//            rel="noopener noreferrer"
+//            class="project-image">
 
-            <img src="${project.image || 'assets/images/project-placeholder.webp'}"
-                 alt="${project.name} website">
+//             <img src="${project.image || 'assets/images/project-placeholder.webp'}"
+//                  alt="${project.name} website">
 
-            <div class="project-overlay">
-                <span>VIEW SITE ↗</span>
-            </div>
-        </a>
+//             <div class="project-overlay">
+//                 <span>VIEW SITE ↗</span>
+//             </div>
+//         </a>
 
-        <h3>${project.name}</h3>
-    `;
+//         <h3>${project.name}</h3>
+//     `;
 
-    const image = article.querySelector("img");
+//     const image = article.querySelector("img");
 
-    image.addEventListener("error", function () {
-        this.src = "assets/images/project-placeholder.webp";
-    });
+//     image.addEventListener("error", function () {
+//         this.src = "assets/images/project-placeholder.webp";
+//     });
 
-    return article;
-}
+//     return article;
+// }
 
 // Show next 9 projects
 // function loadProjects() {
