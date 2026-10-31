@@ -1,4 +1,4 @@
-// Smooth navigation for internal links
+ // Smooth navigation for internal links
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (event) {
@@ -29,16 +29,6 @@ const projects = [
     url: "https://bennuparts.com/"
 },
 {
-    name: "Beyond Build Power",
-    image: "assets/images/beyondbuildpower.webp",
-    url: "https://beyondbuildpower.com/"
-},
-{
-    name: "Beckwith Commercial Roofing",
-    image: "assets/images/beckwithcommercialroofing.webp",
-    url: "https://beckwithcommercialroofing.com/"
-},
-{
     name: "Borsberry Law",
     image: "assets/images/borsberrylaw.webp",
     url: "https://borsberrylaw.com/"
@@ -47,16 +37,6 @@ const projects = [
     name: "Berchtold Asphalt",
     image: "assets/images/berchtoldasphalt.webp",
     url: "https://berchtoldasphalt.com/"
-},
-{
-    name: "Brothers Gutters 815",
-    image: "assets/images/brothersgutters815.webp",
-    url: "https://brothersgutters815.com/"
-},
-{
-    name: "Brothers Gutters 309",
-    image: "assets/images/brothersgutters309.webp",
-    url: "https://brothersgutters309.com/"
 },
 {
     name: "Craft Xpertz",
@@ -97,11 +77,6 @@ const projects = [
     name: "Denny Zimmerman Roofing",
     image: "assets/images/dennyzimmermanroofing.webp",
     url: "https://dennyzimmermanroofing.com/"
-},
-{
-    name: "DM-IG",
-    image: "assets/images/dm-ig.webp",
-    url: "https://dm-ig.com/"
 },
 {
     name: "Everything Water Plumbing",
@@ -220,7 +195,7 @@ const projects = [
 },
 {
     name: "Tazewell County",
-    image: "assets/images/tazewell-il.webp",
+    image: "assets/images/tazewell.webp",
     url: "https://tazewell-il.gov/"
 },
 {
