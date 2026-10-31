@@ -215,7 +215,6 @@ const projects = [
 }  
 ];
 
-```js
 const projectsGrid = document.getElementById("projects-grid");
 
 
