@@ -215,46 +215,58 @@ const projects = [
 }  
 ];
 
-// const projectsGrid = document.getElementById("projects-grid");
+```js
+const projectsGrid = document.getElementById("projects-grid");
+
+
+// Create project card
+function createProject(project) {
+    const article = document.createElement("article");
+    article.className = "project";
+
+    article.innerHTML = `
+        <a href="${project.url}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="project-image">
+
+            <img src="${project.image || 'assets/images/project-placeholder.webp'}"
+                 alt="${project.name} website">
+
+            <div class="project-overlay">
+                <span>VIEW SITE ↗</span>
+            </div>
+        </a>
+
+        <h3>${project.name}</h3>
+    `;
+
+    // Use placeholder if image is missing/broken
+    const image = article.querySelector("img");
+
+    image.addEventListener("error", function () {
+        this.src = "assets/images/project-placeholder.webp";
+    });
+
+    return article;
+}
+
+
+// Display ALL projects
+projects.forEach(project => {
+    projectsGrid.appendChild(createProject(project));
+});
+
+
+// =====================================================
+// LOAD MORE / PAGINATION — DISABLED FOR NOW
+// Enable later when you want 9 projects per load.
+// =====================================================
 
 // const projectsPerLoad = 9;
 // let visibleProjects = 0;
 
-
-// // Create project card
-// function createProject(project) {
-//     const article = document.createElement("article");
-//     article.className = "project";
-
-//     article.innerHTML = `
-//         <a href="${project.url}"
-//            target="_blank"
-//            rel="noopener noreferrer"
-//            class="project-image">
-
-//             <img src="${project.image || 'assets/images/project-placeholder.webp'}"
-//                  alt="${project.name} website">
-
-//             <div class="project-overlay">
-//                 <span>VIEW SITE ↗</span>
-//             </div>
-//         </a>
-
-//         <h3>${project.name}</h3>
-//     `;
-
-//     const image = article.querySelector("img");
-
-//     image.addEventListener("error", function () {
-//         this.src = "assets/images/project-placeholder.webp";
-//     });
-
-//     return article;
-// }
-
-// Show next 9 projects
 // function loadProjects() {
-
 //     const nextProjects = projects.slice(
 //         visibleProjects,
 //         visibleProjects + projectsPerLoad
@@ -269,26 +281,18 @@ const projects = [
 //     updateLoadMoreButton();
 // }
 
-// // Create Load More button
 // const loadMoreButton = document.createElement("button");
-
 // loadMoreButton.className = "load-more";
 // loadMoreButton.textContent = "LOAD MORE";
 
 // loadMoreButton.addEventListener("click", loadProjects);
 
-
-// // Add button after project grid
 // projectsGrid.parentNode.appendChild(loadMoreButton);
 
-
-// // Hide button when everything is loaded
 // function updateLoadMoreButton() {
-
 //     if (visibleProjects >= projects.length) {
 //         loadMoreButton.style.display = "none";
-//     } 
+//     }
 // }
 
-// // Initial 9 projects
 // loadProjects();
