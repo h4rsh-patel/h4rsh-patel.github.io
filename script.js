@@ -18,7 +18,32 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 
 const projects = [
- {
+{
+    name: "St. Paul Peoria",
+    image: "assets/images/stpaulpeoria.webp",
+    url: "https://stpaulpeoria.org/"
+},
+{
+    name: "Sunset Metal Roofing",
+    image: "assets/images/sunsetmetalroofing.webp",
+    url: "https://www.sunsetmetalroofing.com/"
+},
+{
+    name: "Suttatti",
+    image: "assets/images/suttatti.webp",
+    url: "https://suttatti.com/"
+},
+{
+    name: "St. Anthony Bartonville",
+    image: "assets/images/stanthonybartonville.webp",
+    url: "https://stanthonybartonville.com/"
+},
+{
+    name: "We Care of Morton",
+    image: "assets/images/wecareofmorton.webp",
+    url: "https://wecareofmorton.com/"
+},
+{
     name: "Jambughoda",
     image: "assets/images/jambughoda.webp",
     url: "https://jambughoda.com/"
@@ -27,16 +52,6 @@ const projects = [
     name: "Aver Media",
     image: "assets/images/aver.webp",
     url: "https://aver.media/"
-},
-{
-    name: "Bennu Parts",
-    image: "assets/images/bennuparts.webp",
-    url: "https://bennuparts.com/"
-},
-{
-    name: "Borsberry Law",
-    image: "assets/images/borsberrylaw.webp",
-    url: "https://borsberrylaw.com/"
 },
 {
     name: "Berchtold Asphalt",
@@ -49,19 +64,9 @@ const projects = [
     url: "https://craftxpertz.com/"
 },
 {
-    name: "Compassionate Coexist",
-    image: "assets/images/compassionatecoexist.webp",
-    url: "https://compassionatecoexist.com/"
-},
-{
     name: "Central Illinois Construct",
     image: "assets/images/cicontractor.webp",
     url: "https://cicontractor.com/"
-},
-{
-    name: "CLR Illinois",
-    image: "assets/images/clrillinois.webp",
-    url: "https://clrillinois.com/"
 },
 {
     name: "Comfort Specialists",
@@ -72,16 +77,6 @@ const projects = [
     name: "DC Tree Landscape",
     image: "assets/images/dctreelandscape.webp",
     url: "https://dctreelandscape.com/"
-},
-{
-    name: "Defender Expeditions Club",
-    image: "assets/images/defenderexpeditionsclub.webp",
-    url: "https://defenderexpeditionsclub.com/"
-},
-{
-    name: "Denny Zimmerman Roofing",
-    image: "assets/images/dennyzimmermanroofing.webp",
-    url: "https://dennyzimmermanroofing.com/"
 },
 {
     name: "Everything Water Plumbing",
@@ -108,7 +103,6 @@ const projects = [
     image: "assets/images/jadiajewels.webp",
     url: "https://jadiajewels.com/"
 },
-
 {
     name: "Khimani Cotton",
     image: "assets/images/khimanicotton.webp",
@@ -175,26 +169,6 @@ const projects = [
     url: "https://stpeterbenson.com/"
 },
 {
-    name: "St. Paul Peoria",
-    image: "assets/images/stpaulpeoria.webp",
-    url: "https://stpaulpeoria.org/"
-},
-{
-    name: "Sunset Metal Roofing",
-    image: "assets/images/sunsetmetalroofing.webp",
-    url: "https://www.sunsetmetalroofing.com/"
-},
-{
-    name: "Suttatti",
-    image: "assets/images/suttatti.webp",
-    url: "https://suttatti.com/"
-},
-{
-    name: "St. Anthony Bartonville",
-    image: "assets/images/stanthonybartonville.webp",
-    url: "https://stanthonybartonville.com/"
-},
-{
     name: "Tazewell County",
     image: "assets/images/tazewell.webp",
     url: "https://tazewell-il.gov/"
@@ -205,16 +179,40 @@ const projects = [
     url: "https://thesolarpanther.com/"
 },
 {
-    name: "We Care of Morton",
-    image: "assets/images/wecareofmorton.webp",
-    url: "https://wecareofmorton.com/"
-},
-{
     name: "Yoder Oil Inc.",
     image: "assets/images/yoderoilinc.webp",
     url: "https://yoderoilinc.com/"
-}
-    
+},
+{
+    name: "Bennu Parts",
+    image: "assets/images/bennuparts.webp",
+    url: "https://bennuparts.com/"
+},
+{
+    name: "Borsberry Law",
+    image: "assets/images/borsberrylaw.webp",
+    url: "https://borsberrylaw.com/"
+},
+{
+    name: "Defender Expeditions Club",
+    image: "assets/images/defenderexpeditionsclub.webp",
+    url: "https://defenderexpeditionsclub.com/"
+},
+{
+    name: "CLR Illinois",
+    image: "assets/images/clrillinois.webp",
+    url: "https://clrillinois.com/"
+},
+{
+    name: "Compassionate Coexist",
+    image: "assets/images/compassionatecoexist.webp",
+    url: "https://compassionatecoexist.com/"
+},
+{
+    name: "Denny Zimmerman Roofing",
+    image: "assets/images/dennyzimmermanroofing.webp",
+    url: "https://dennyzimmermanroofing.com/"
+}  
 ];
 
 const projectsGrid = document.getElementById("projects-grid");
@@ -254,46 +252,43 @@ function createProject(project) {
     return article;
 }
 
-
 // Show next 9 projects
-function loadProjects() {
+// function loadProjects() {
 
-    const nextProjects = projects.slice(
-        visibleProjects,
-        visibleProjects + projectsPerLoad
-    );
+//     const nextProjects = projects.slice(
+//         visibleProjects,
+//         visibleProjects + projectsPerLoad
+//     );
 
-    nextProjects.forEach(project => {
-        projectsGrid.appendChild(createProject(project));
-    });
+//     nextProjects.forEach(project => {
+//         projectsGrid.appendChild(createProject(project));
+//     });
 
-    visibleProjects += nextProjects.length;
+//     visibleProjects += nextProjects.length;
 
-    updateLoadMoreButton();
-}
+//     updateLoadMoreButton();
+// }
 
+// // Create Load More button
+// const loadMoreButton = document.createElement("button");
 
-// Create Load More button
-const loadMoreButton = document.createElement("button");
+// loadMoreButton.className = "load-more";
+// loadMoreButton.textContent = "LOAD MORE";
 
-loadMoreButton.className = "load-more";
-loadMoreButton.textContent = "LOAD MORE";
-
-loadMoreButton.addEventListener("click", loadProjects);
-
-
-// Add button after project grid
-projectsGrid.parentNode.appendChild(loadMoreButton);
+// loadMoreButton.addEventListener("click", loadProjects);
 
 
-// Hide button when everything is loaded
-function updateLoadMoreButton() {
-
-    if (visibleProjects >= projects.length) {
-        loadMoreButton.style.display = "none";
-    } 
-}
+// // Add button after project grid
+// projectsGrid.parentNode.appendChild(loadMoreButton);
 
 
-// Initial 9 projects
-loadProjects();
+// // Hide button when everything is loaded
+// function updateLoadMoreButton() {
+
+//     if (visibleProjects >= projects.length) {
+//         loadMoreButton.style.display = "none";
+//     } 
+// }
+
+// // Initial 9 projects
+// loadProjects();
