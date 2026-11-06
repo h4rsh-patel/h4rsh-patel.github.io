@@ -300,6 +300,7 @@ section p {
     background: #151515;
     border-radius: 8px;
     text-decoration: none;
+    isolation: isolate;
 }
 
 .project-image img {
@@ -334,7 +335,6 @@ section p {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-
     transform: translateY(10px);
     transition: transform 0.3s ease;
 }
