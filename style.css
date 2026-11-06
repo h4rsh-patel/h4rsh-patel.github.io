@@ -308,6 +308,8 @@ section p {
     display: block;
     object-fit: cover;
     object-position: top center;
+    image-rendering: auto;
+    backface-visibility: hidden;
     transition: transform 0.5s ease;
 }
 
@@ -340,7 +342,7 @@ section p {
 /* Project Hover */
 
 .project-image:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .project-image:hover .project-overlay {
